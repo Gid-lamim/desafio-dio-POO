@@ -32,16 +32,39 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
+
+        System.out.println("Camila ________________________________________________________________________");
         Dev devCamila = new Dev();
         devCamila.setNome("Camila");
         devCamila.inscreverBootcamp(bootcamp);
+        System.out.println("antes de progredir ------------");
         System.out.println("Conteudos incristos Camila: " + devCamila.getConteudoInscritos());
         System.out.println("Conteudos concluidos Camila: " + devCamila.getConteudoConluidos());
+        System.out.println("XP de Camila: " + devCamila.calcularXP());
+        devCamila.progredir();
+        System.out.println("após progredir ------------");
+        System.out.println("Conteudos incristos Camila: " + devCamila.getConteudoInscritos());
+        System.out.println("Conteudos concluidos Camila: " + devCamila.getConteudoConluidos());
+        System.out.println("XP de Camila: " + devCamila.calcularXP());
 
+
+        System.out.println("Joao ________________________________________________________________________");
         Dev devJoao = new Dev();
         devJoao.setNome("Joao");
         devJoao.inscreverBootcamp(bootcamp);
+        System.out.println("antes de progredir ------------");
         System.out.println("Conteudos incristos Joao: " + devJoao.getConteudoInscritos());
         System.out.println("Conteudos concluidos Joao: " + devJoao.getConteudoConluidos());
+        System.out.println("XP de Joao: " + devJoao.calcularXP());
+        devJoao.progredir();
+        devJoao.progredir();
+        System.out.println("após progredir ------------");
+        System.out.println("Conteudos incristos Joao: " + devJoao.getConteudoInscritos());
+        System.out.println("Conteudos concluidos Joao: " + devJoao.getConteudoConluidos());
+        System.out.println("XP de Joao: " + devJoao.calcularXP());
+
+
+
     }
+
 }
